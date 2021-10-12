@@ -18,7 +18,7 @@ body {
 }
 
 img {
-    min-width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -29,6 +29,11 @@ h1, h2, p {
 
 button {
     cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
     
 .container {
