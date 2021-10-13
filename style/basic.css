@@ -22,7 +22,7 @@ img {
     height: auto;
 }
 
-h1, h2, p {
+h1, h2, p, ul {
     margin: 0;
 }
 
@@ -34,6 +34,11 @@ button {
 ul {
     list-style: none;
     padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
     
 .container {
