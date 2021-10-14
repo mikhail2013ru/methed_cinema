@@ -47,9 +47,10 @@
 }
 
 .header__burger-btn {
-    width: 106px;
+    /* width: 106px; */
     height: 40px;
     background-color: transparent;
+    background-position: right;
     border: none;
     outline: none;
     transition: box-shadow .2s;
@@ -68,6 +69,16 @@
 .header__burger-btn:focus,
 .header__burger-btn:active {
     box-shadow: 0 0 3px 2px var(--color-primary);
+}
+
+.burger-btn-is-visible {
+    display: none;
+}
+
+@media (max-width: 320px) {
+    .burger-btn-is-visible {
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {

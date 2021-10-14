@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Methed cinema - онлайн кинотеатр</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
+    </script>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -18,7 +24,7 @@
                 <input class="header__search-input" type="search" required placeholder="Поиск">
             </form>
 
-            <button class="header__burger-btn" aria-label="открыть меню">
+            <button class="header__burger-btn js-burger-btn burger-btn-is-visible" aria-label="открыть меню">
                 <svg class="header__burger-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M4.94403 9.8959H34.6564" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
                     <path d="M28.0537 19.8H4.94403" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
@@ -35,7 +41,7 @@
                 <h2 class="film-week__title">ДЮНА</h2>
                 <p class="film-week__tagline">За пределами страха ждёт судьба</p>
                 <button class="film-week__watch-btn">Смотреть фильм</button>
-                <a class="film-week__watch-trailer" href="#" aria-label="смотреть трейлер"></a>
+                <a class="film-week__watch-trailer" href="https://youtu.be/Q6nepw3fskg" aria-label="смотреть трейлер" data-fancybox></a>
             </div>
         </section>
 
@@ -47,49 +53,49 @@
 
                 <ul class="other-films__list">
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
-                            <img class="other-films__img" src="img/other-films/shangchi.jpg" alt="постер к фильму ШангЧи">
+                        <a class="other-films__link" href="https://youtu.be/whv6KtrXIc0" data-fancybox>
+                            <img class="other-films__img" src="img/other-films/shangchi.jpg" alt="постер к фильму Шан-Чи">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/9FpufEP1jeI" data-fancybox>
                             <img class="other-films__img" src="img/other-films/fee_guy.jpg" alt="постер к фильму Главый герой">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/zeKFmhPKgDs" data-fancybox>
                             <img class="other-films__img" src="img/other-films/addams_family.jpg" alt="постер к фильму Семейка Аддамс">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/Z3b1GbPg2VM" data-fancybox>
                             <img class="other-films__img" src="img/other-films/no_time_to_die.jpg" alt="постер к фильму Не время умирать">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
-                            <img class="other-films__img" src="img/other-films/matrix.jpg" alt="постер к фильму Матрица">
+                        <a class="other-films__link" href="https://youtu.be/8qB8EGNOtr8" data-fancybox>
+                            <img class="other-films__img" src="img/other-films/matrix.jpg" alt="постер к фильму Матрица 4">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/hlANal2_tsc" data-fancybox>
                             <img class="other-films__img" src="img/other-films/spiderman.jpg" alt="постер к фильму Человек паук">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/cnn8xghmxZA" data-fancybox>
                             <img class="other-films__img" src="img/other-films/infinite.jpg" alt="постер к фильму Бесконечность">
                         </a>
                     </li>
 
                     <li class="other-films__item">
-                        <a class="other-films__link" href="#">
+                        <a class="other-films__link" href="https://youtu.be/_oboseJViww" data-fancybox>
                             <img class="other-films__img" src="img/other-films/eternals.jpg" alt="постер к фильму Вечные">
                         </a>
                     </li>
@@ -152,5 +158,33 @@
 
         </div>
     </footer>
+
+
+    <nav class="navigation js-navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Публичная оферта</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Партнерам</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">FAQ</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Приложения</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Карта сайта</a>
+            </li>
+        </ul>
+        <button class="navigation__close js-navigation-close">
+            <i class="fa fa-times navigation__close-cross" aria-hidden="true"></i>
+        </button>
+    </nav>
 </body>
 </html>
