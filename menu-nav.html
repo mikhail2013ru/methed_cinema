@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methed cinema - онлайн кинотеатр</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+    <script type="module">
+        import { Fancybox } from "https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.esm.js";
+    </script>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="index.html" class="header__logo header__logo--white">
+                <span class="header__logo-primary">Methed</span> Cinema
+            </a>
+
+            <form class="header__search-form" action="#">
+                <input class="header__search-input" type="search" required placeholder="Поиск">
+            </form>
+
+            <button class="header__burger-btn js-burger-btn burger-btn-is-visible" aria-label="открыть меню">
+                <svg class="header__burger-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4.94403 9.8959H34.6564" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M28.0537 19.8H4.94403" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4.94403 29.7041H21.4509" stroke-width="2.475" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="menu-nav">
+            <div class="container menu-nav__container">
+                <p class="menu-nav__title">
+                    Страница в разработке...
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__column contacts">
+                <p class="contacts__logo">
+                    <span class="contacts__logo-primary">Methed</span> Cinema
+                </p>
+
+                <p class="contacts__description">онлайн-кинотеатр</p>
+
+                <a href="tel:88003336202" class="contacts__phone">8 800 333 62 02</a>
+
+                <a href="mailto:help@tvmethed.ru" class="contacts__mail">help@tvmethed.ru</a>
+
+                <a href="mailto:pressa@tvmethed.ru" class="contacts__mail">pressa@tvmethed.ru</a>
+            </div>
+
+            <div class="footer__column subnav">
+                <ul class="subnav__list">
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Публичная оферта</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Партнерам</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">FAQ</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Приложения</a>
+                    </li>
+
+                    <li class="subnav__item">
+                        <a href="#" class="subnav__link">Карта сайта</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer__column regulation">
+                <img src="img/footer/18+.svg" alt="Только для совершеннолетних" class="regulation__age">
+                <p class="regulation__offer">Просматривая материалы, находящиеся на настоящем сайте, вы обязуетесь выполнять условия Публичной оферты</p>
+            </div>
+
+            <div class="footer__column partners">
+                <img src="img/footer/me.svg" alt="Логотип Methed" class="partners__me">
+                <p class="partners__description">Просматривая материалы, находящиеся на настоящем сайте, вы обязуетесь выполнять условия Публичной оферты</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <nav class="navigation js-navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Публичная оферта</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Партнерам</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">FAQ</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Приложения</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#" class="navigation__link">Карта сайта</a>
+            </li>
+        </ul>
+        <button class="navigation__close js-navigation-close">
+            <i class="fa fa-times navigation__close-cross" aria-hidden="true"></i>
+        </button>
+    </nav>
+</body>
+</html>

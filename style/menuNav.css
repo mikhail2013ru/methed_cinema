@@ -1,0 +1,18 @@
+.menu-nav__container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nav__title {
+    font-size: 20px;
+    font-style: italic;
+    font-weight: 700;
+}
+
+@media (max-width: 480px) {
+    .menu-nav__container {
+        justify-content: normal;
+    }
+}
